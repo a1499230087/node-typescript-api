@@ -12,11 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3 #这里使用了github官方提供的action,checkout项目到虚拟机上
 
-      - name: Install Dependencies
-        run: npm i #执行的命令
-      - name: Build
-        run: npm build
-
       # 利用action把build好的文件上传到服务器/workspace/react-note路径下,需要确认此目录已在服务端创建
       - name: deploy file to server
         uses: wlixcc/SFTP-Deploy-Action@v1.0
