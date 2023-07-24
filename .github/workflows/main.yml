@@ -1,4 +1,4 @@
-name: Continuous Deploy #action名称
+name: wc #action名称
 on:
   push: #触发条件
     branches:
